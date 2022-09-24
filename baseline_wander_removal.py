@@ -1,9 +1,9 @@
 import numpy as np
 from scipy.signal import medfilt
 import matplotlib.pyplot as plt
-import seaborn as sns
+# import seaborn as sns
 
-sns.set_theme()
+# sns.set_theme()
 
 BASIC_SRATE = 160
 
