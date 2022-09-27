@@ -21,8 +21,9 @@ def animate(i):
     end += 10
     ax.clear()
     ax.set_title('ECG Wave Plot')
-    ax.plot(range(start, end), band_pass_filter(
-        filter_signal(data[start:end])))
+    # ax.plot(range(start, end), band_pass_filter(
+    #     filter_signal(data[start:end])))
+    ax.plot(range(start, end), band_pass_filter(filter_signal(data[start:end])))
 
 
 # call the animation
