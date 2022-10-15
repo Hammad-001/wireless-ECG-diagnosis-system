@@ -7,9 +7,9 @@ from baseline_wander_removal import filter_signal, band_pass_filter
 fig, ax = plt.subplots()
 
 # reading file
-with open('./Lead 1/nabeels_record.txt', 'r') as file:
+with open('./record1.txt', 'r') as file:
     data = file.readlines()
-    data = [int(d.strip()) for d in data]
+    data = [int(d.strip().split(',')[1]) for d in data]
 
 start, end = 0, 500
 
