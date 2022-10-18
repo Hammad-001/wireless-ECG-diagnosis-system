@@ -41,6 +41,8 @@ def filter_signal(X):
 
 
 def band_pass_filter(signal):
+    # Bandpass filter
+    signal = signal.to_numpy()
     result = None
     sig = signal.copy()
     for index in range(len(signal)):

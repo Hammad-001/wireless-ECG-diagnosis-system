@@ -27,8 +27,11 @@ while True:
         break
 
 # Take input
-file_name1 = "record1.txt"
-with open(file_name1, 'a') as f1:
+file_name = "record.txt"
+
+if num_args == 3:
+    file_name = sys.argv[2]
+with open(file_name, 'a') as f1:
 
     while True:
         # read and decode serial values
@@ -41,8 +44,9 @@ with open(file_name1, 'a') as f1:
         # if reading is not empty
         if text !='':
             print(text)
-            text = text.split(' ')
-            f1.write(text[0]+','+text[1]+'\n')
+            f1.write(text + '\n')
+            # text = text.split(',')
+            # f1.write(text[0]+','+text[1]+'\n')
 
 # close the serial connection 
 mcu.close()
