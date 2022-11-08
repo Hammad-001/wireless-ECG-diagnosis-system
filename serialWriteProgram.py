@@ -18,9 +18,9 @@ except:
     exit()
 
 # successfully connected
-print(mcu.readline().decode())
-keypress = input()
-mcu.write(bytes(keypress, 'utf-8'))
+# print(mcu.readline().decode())
+# keypress = input()
+# mcu.write(bytes(keypress, 'utf-8'))
 
 file_name = "record.txt"
 
